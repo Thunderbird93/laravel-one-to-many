@@ -8,6 +8,8 @@
 
 @section('content')
 <div class="container">
-    <h1>Questa è la Dashboard!</h1>
+    <h1>Questa si stampano i Post!</h1>
+
+    @dump($posts);
 </div>
 @endsection

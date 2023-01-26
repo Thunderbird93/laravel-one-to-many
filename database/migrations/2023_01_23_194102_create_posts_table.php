@@ -15,14 +15,19 @@ return new class extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
+            $table->string('slug')->unique();
+            $table->date('date');
+            $table->string('image');
+            $table->text('text');
             $table->timestamps();
         });
     }
 
     /**
      * Reverse the migrations.
-     *
-     * @return void
+     * 
+     * @return voidphp
      */
     public function down()
     {

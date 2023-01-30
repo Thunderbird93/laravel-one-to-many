@@ -12,6 +12,8 @@
 
     <!-- @dump($posts) -->
 
+    <a href="{{url('/admin/posts/create')}}" class="btn btn-success btn-sm" title="Add New Post">Aggiungi Post</a>
+
     <table class="table">
         <thead>
           <tr>

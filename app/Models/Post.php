@@ -12,7 +12,6 @@ class Post extends Model
 
     public static function generateSlug($string){
         $slug = Str::slug($string, '-');
-        
         $original_slug = $slug;
         $c = 1;
         $exists = Post::where('slug',$slug)->first();
